@@ -1,0 +1,10 @@
+<h1>Olá pessoal, sejá bem-vindo ao meu blog</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<% @posts.each do |post| %>
+    <% if post.description? %>
+        <h1> <%= link_to  post.title, (post) %> </h1>      <! aqui tive que locar  = pra aceita na home>
+    <% end %>
+<% end %>
+
+<%=link_to "Posts", posts_path %>
